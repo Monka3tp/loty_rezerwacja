@@ -1,13 +1,17 @@
 import java.util.Date;
 
+//Klasa Flight
+//Klasa reprezentująca pojedynczy lot
+//Powinna zawierać pola takie jak: miejsce docelowe, miejsce wylotu, data wylotu, czas trwania lotu, liczba dostępnych miejsc
+//Zaimplementuj odpowiednie metody dostępowe (gettery i settery).
 public class Flight {
     private String MiejsceDocelowe;
     private String MiejsceWylotu;
-    private Date DataWylotu;
+    private String DataWylotu;
     private String CzasTrwaniaLotu;
     private int LiczbaDostepnychMiejsc;
 
-    public Flight(String miejsceDocelowe, String miejsceWylotu, Date dataWylotu, String czasTrwaniaLotu, int liczbaDostepnychMiejsc) {
+    public Flight(String miejsceDocelowe, String miejsceWylotu, String dataWylotu, String czasTrwaniaLotu, int liczbaDostepnychMiejsc) {
         MiejsceDocelowe = miejsceDocelowe;
         MiejsceWylotu = miejsceWylotu;
         DataWylotu = dataWylotu;
@@ -31,11 +35,11 @@ public class Flight {
         MiejsceWylotu = miejsceWylotu;
     }
 
-    public Date getDataWylotu() {
+    public String getDataWylotu() {
         return DataWylotu;
     }
 
-    public void setDataWylotu(Date dataWylotu) {
+    public void setDataWylotu(String dataWylotu) {
         DataWylotu = dataWylotu;
     }
 
